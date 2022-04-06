@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        #scroll-bike{
+            margin-left: auto;
+            margin-right: auto;
+        }
+		body {
+            overflow: hidden;
+            scroll-behavior: smooth;
+		}
+		h1 {
+			color: green;
+		}
+		img {
+			position: absolute;
+            width: 85%;
+		}
+		
+	</style>
+  </head>
+
+  <body>
+      <div class="container-fluid justify-content-center" >
+    <div id="scroll-bike">
+		<img src="./RoyalEnfield/Royal Enfield_011.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_012.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_013.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_014.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_015.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_016.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_017.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_018.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_019.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_020.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_021.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_022.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_023.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_024.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_025.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_026.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_027.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_028.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_029.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_030.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_031.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_032.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_033.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_034.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_035.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_036.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_037.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_038.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_039.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_040.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_041.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_042.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_043.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_044.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_045.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_046.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_047.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_048.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_049.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_050.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_051.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_052.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_053.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_054.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_055.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_056.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_057.png" class="test" />
+		<img src="./RoyalEnfield/Royal Enfield_058.png" class="test" />
+        <img src="./RoyalEnfield/Royal Enfield_059.png" class="test" />
+
+	</div>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+		window.onload = function() {
+	
+			var imageIndex = 0;
+			var images =
+				document.getElementsByClassName('test');
+			var isMouseOverImage = false;
+			var scrollImages =
+				document.getElementById('scroll-bike');
+			var x, y;
+			function noScroll() {
+				window.scrollTo(x, y);
+			}
+			scrollImages.addEventListener(
+					"mouseenter", function() {
+				x = window.pageXOffset;
+				y = window.pageYOffset;
+				window.addEventListener("scroll", noScroll);
+				isMouseOverImage = true;
+			});
+			scrollImages.addEventListener(
+					"mouseleave", function() {
+				isMouseOverImage = false;
+				window.removeEventListener(
+							"scroll", noScroll);
+			});
+
+			scrollImages.addEventListener(
+						"wheel", function(e) {
+				if (isMouseOverImage) {
+					var nextImageIndex;
+					if (e.deltaY > 0)
+						nextImageIndex = (imageIndex + 1)
+										% images.length;
+					else
+						nextImageIndex =
+								(imageIndex - 1
+								+ images.length)
+								% images.length;
+
+					images[imageIndex].style.zIndex = "0";
+					images[nextImageIndex].style.zIndex = "1";
+					imageIndex = nextImageIndex;
+				}
+			});
+		}
+	</script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+
